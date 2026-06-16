@@ -1,0 +1,33 @@
+application:
+  name: DevFlow
+  version: 1.0.0
+
+services:
+  frontend:
+    framework: React
+    port: 3000
+
+  backend:
+    runtime: Node.js
+    framework: Express
+    port: 5000
+
+  database:
+    type: MongoDB
+
+  authentication:
+    provider: JWT
+
+features:
+  - AI code review
+  - GitHub analytics
+  - Productivity tracking
+  - Real-time notifications
+
+deployment:
+  platform: Vercel
+  ci_cd: GitHub Actions
+
+status:
+  learning: true
+  building: true
